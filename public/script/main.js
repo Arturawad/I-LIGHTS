@@ -62,7 +62,7 @@ function createProductCard(product) {
         product.description.forEach((desc) => {
             const cardProductDescriptionItem = document.createElement('li')
             cardProductDescriptionItem.classList.add('main__section__products__content__card__list__item')
-            cardProductDescriptionItem.innerHTML = `<img src="/img/rectangle 56.svg" alt="point">${desc.item}`
+            cardProductDescriptionItem.innerHTML = `<img src="/img/Rectangle 56.svg" alt="point">${desc.item}`
             cardProductDescription.append(cardProductDescriptionItem)
         }
     )
@@ -134,7 +134,7 @@ function saveProductsForBasketInfo() {
 
             const descCardArray = productCardInfoContainer.querySelectorAll('.main__section__products__content__card__list__item')
             descCardArray.forEach((desc) => {
-                productCardInfo.descCard.push(desc.innerHTML.replace(/<img src="\/img\/rectangle 56.svg" alt="point">/g, '').trim())
+                productCardInfo.descCard.push(desc.innerHTML.replace(/<img src="\/img\/Rectangle 56.svg" alt="point">/g, '').trim())
             })
 
             let productsCardArray = JSON.parse(localStorage.getItem("productsCardArray")) || []
