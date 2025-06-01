@@ -822,7 +822,7 @@ body {
 .main__section__delivery__content__regions__form__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
 }
 .main__section__delivery__content__regions__form__input {
     border-bottom: 1px solid #C4C4C4;
