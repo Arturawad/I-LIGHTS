@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>I-LIGHTS - Корзина</title> <%- include('../blocks/head') %> </head>
+<body>
+    <%- include('../blocks/header') %>
+    <main class="main__section__basket container">
+        <h1 class="main__section__about__title" id="main-catalog">Корзина</h1>
+        <div class="main__section__basket__content" id="products-basket">
+        </div>
+        <div class="main__section__basket__wrapper" id="controls-basket">
+            <div class="main__section__basket__wrapper__promocode">
+                <form action="/getPromocodeBasket" id="get-promocode">
+                    <div style="position: relative;">
+                        <input type="text" class="main__section__basket__wrapper__promocode__input" placeholder="Промокод" id="get-promocode-input">
+                        <button type="button" class="main__section__basket__wrapper__promocode__button__close main__section__basket__wrapper__promocode__button__close__content__non" id="get-promocode-button"><img src="https://cdn-icons-png.freepik.com/512/8373/8373486.png" alt="close" style="--size: 21px; width: var(--size); height: var(--size)"></button>
+                    </div>
+                    <button type="submit" class="main__section__basket__wrapper__promocode__button">Применить</button>
+                </form>
+                <p class="main__section__basket__wrapper__promocode__text main__section__basket__wrapper__promocode__text__error main__section__basket__wrapper__promocode__text__non" id="promocode-error">Указан несуществующий промокод, убедитесь, что он указан верно.</p>
+                <p class="main__section__basket__wrapper__promocode__text main__section__basket__wrapper__promocode__text__success main__section__basket__wrapper__promocode__text__non" id="promocode-success">Промокод был успешно активирован! - <span id="discount-percentage"></span>% </p>
+            </div>
+            <div class="main__section__basket__wrapper__total">
+                <div class="main__section__basket__wrapper__total__content">
+                    <p class="main__section__basket__wrapper__total__quantity">Товары (<span id="quantity-products"></span>)</p>
+                    <div class="main__section__basket__wrapper__total__wrapper">
+                        <h1 class="main__section__basket__wrapper__total__wrapper__text">Итого:</h1>
+                        <p class="main__section__basket__wrapper__total__wrapper__price" id="total-price"></p>
+                    </div>
+                    <button type="button" class="main__section__basket__wrapper__total__button">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__section__basket__absence">
+            <h1 class="main__section__basket__absence__title">Ваша корзина пуста</h1>
+            <p class="main__section__basket__absence__desc">Для добавления товаров в корзину <span><a href="/catalog">перейдите в каталог</a></span></p>
+        </div>
+    </main>
+    <%- include('../blocks/footer') %>
+</body>
+</html>

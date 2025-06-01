@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>I-LIGHTS - Доставка и оплата</title> <%- include('../blocks/head') %> </head>
+<body>
+    <%- include('../blocks/header') %>
+    <main class="main__section__delivery container">
+        <h1 class="main__section__about__title" id="main-catalog">Доставка и оплата</h1>
+        <div class="main__section__delivery__content">
+            <div class="main__section__delivery__content__moscow">
+                <h1 class="main__section__delivery__content__title">По Москве</h1>
+                <p class="main__section__delivery__content__desc">Доставка в течении 1 дня после подтверждения заказа. Оплата может производиться как наличными курьеру , так и путем перечисления денежных средств на счет организации с банковского счета физ. лица или через кассу любого банка.</p>
+                <div class="main__section__delivery__content__moscow__steps">
+                    <ul class="main__section__delivery__content__moscow__steps__list">
+                        <li class="main__section__delivery__content__moscow__steps__list__item">
+                            <div class="main__section__delivery__content__moscow__steps__list__item__step">1</div>
+                            <p class="main__section__delivery__content__moscow__steps__list__item__desc">Оформляете заявку в любой из форм на нашем сайте. Укажите телефон или адрес электронной почты для обратной связи.</p>
+                            <h1 class="main__section__delivery__content__alternative">Либо заявку можно оформить <br> по телефону <span><a href="tel:74952335557">+7 495 233 55 57</a></span></h1><img class="main__section__delivery__content__moscow__steps__list__item__line" src="/img/Line 66.svg" alt="line">
+                        </li>
+                        <li class="main__section__delivery__content__moscow__steps__list__item"><div class="main__section__delivery__content__moscow__steps__list__item__step">2</div><p class="main__section__delivery__content__moscow__steps__list__item__desc">Менеджер оформляет заказ, <br>вы согласовываете порядок доставки и оплаты с ним.</p><img class="main__section__delivery__content__moscow__steps__list__item__line" src="/img/Line 66.svg" alt="line">
+                        </li>
+                        <li class="main__section__delivery__content__moscow__steps__list__item"><div class="main__section__delivery__content__moscow__steps__list__item__step">3</div><p class="main__section__delivery__content__moscow__steps__list__item__desc">Получаете изделие <br>выбранным вами способом.</p></li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="main__section__delivery__content__regions">
+                <h1 class="main__section__delivery__content__title">В регионы</h1>
+                <p class="main__section__delivery__content__desc">Доставка через транспортные компании Деловые Линии, ПЭК, СДЭК в течении 2-7 дней с момента отправки. Возможна как адресная доставка, так и получение в пункте самовывоза в вашем городе.</p>          
+                <form action="/getContactsPerson" class="main__section__delivery__content__regions__form" id="formInputContactsPerson">
+                    <div class="main__section__delivery__content__regions__form__wrapper">
+                        <input type="text" class="main__section__delivery__content__regions__form__input" placeholder="Ваше имя*" data-contactsPerson="name" id="InputContactsPersonName">
+                        <input type="text" class="main__section__delivery__content__regions__form__input" placeholder="Ваш телефон*" data-contactsPerson="phone" id="InputContactsPersonPhone">
+                    </div>
+                    <button type="submit" class="main__section__products__link" style="width: 214px; height: 45px; margin-top: 29px; align-self: flex-end;">Отправить</button>
+                </form>      
+            </div>
+        </div>
+    </main>
+    <%- include('../blocks/footer') %>
+</body>
+</html>

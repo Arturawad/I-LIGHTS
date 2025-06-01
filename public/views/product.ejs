@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>I-LIGHTS - <%= productID %></title>
+    <%- include('../blocks/head') %>
+</head>
+<body>
+    <%- include('../blocks/header') %>
+
+    <div class="main__section__product-desc container">
+        <div class="main__section__product-desc__img">
+            <img src="" alt="product">
+        </div>
+
+        <div class="main__section__product-desc__text">
+            <h1 class="main__section__product-desc__text__title"></h1>
+            <div class="main__section__product-desc__text__evaluation">
+                <img src="" alt="star"><img src="" alt="star"><img src="" alt="star"><img src="" alt="star"><img src="" alt="star"> (<span id="product-evaluation"></span>)
+            </div>
+            <p class="main__section__product-desc__text__desc"></p>
+            <p class="main__section__product-desc__text__availability"></p>
+            <p class="main__section__product-desc__text__price"></p>
+            <div class="main__section__basket__card__counter">
+                <button class="main__section__basket__card__counter__button main__section__basket__card__counter__button__left" type="button">-</button>
+                <p class="main__section__basket__card__counter__text">1</p>
+                <button class="main__section__basket__card__counter__button main__section__basket__card__counter__button__right" type="button">+</button>
+            </div>
+            <button type="submit" class="main__section__basket__wrapper__promocode__button">В корзину</button>
+            <img src="https://i7.uihere.com/icons/170/485/74/purchasing-volume-comparison-27d261dc9d66135620455ad0649a20c3.png" style="width: 40px; height: 40px;" alt="a">
+        </div>
+    </div>
+
+    <%- include('../blocks/footer') %>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>I-LIGHTS - Каталог</title>
+    <%- include('../blocks/head') %>
+</head>
+<body>
+    <%- include('../blocks/header') %>
+
+    <main class="main">
+        <div class="main__content container">
+            <h1 class="main__content__title" id="main-catalog">Каталог</h1>
+
+            <div class="main__content__categories">
+                <button type="button" class="main__content__categories__button" data-categories="">Весь каталог</button>
+                <button type="button" class="main__content__categories__button" data-categories="Трековые светильники">Трековые светильники</button>
+                <button type="button" class="main__content__categories__button" data-categories="Встраиваемые светильники">Встраиваемые светильники</button>
+                <button type="button" class="main__content__categories__button" data-categories="Фигурные светильники">Фигурные светильники</button>
+                <button type="button" class="main__content__categories__button" data-categories="Светильники Армстронг">Светильники Армстронг</button>
+                <button type="button" class="main__content__categories__button" data-categories="Светильники Армстронг с равномерной засветкой">Светильники Армстронг с равномерной засветкой</button>
+            </div>
+
+            <div class="main__content__products">
+                <div class="main__content__products__content" id="product-container">
+                </div>
+                <button type="button" class="main__content__products__button" id="button-loadmore">Показать еще</button>
+            </div>
+        </div>
+    </main>
+
+    <%- include('../blocks/footer') %>
+</body>
+</html>
